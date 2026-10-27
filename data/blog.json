@@ -1,0 +1,32 @@
+[
+  {
+    "id": "001-git-basics",
+    "title": "Git 版本控制学习笔记",
+    "summary": "记录第一次完整使用 Git 的实操过程：从 init、add、commit 到 push，再到用 GitHub Pages 部署静态网站",
+    "date": "2024-10-15",
+    "category": "工具",
+    "tags": ["Git", "GitHub", "版本控制"],
+    "cover": "assets/images/blog/git.png",
+    "content": "content/blog/001-git-basics.md"
+  },
+  {
+    "id": "002-chrome-extension",
+    "title": "Chrome 电商图片提取插件开发",
+    "summary": "从需求分析到方案设计再到代码实现，完整记录一个 Chrome 插件的开发过程与踩坑经验",
+    "date": "2024-12-01",
+    "category": "前端",
+    "tags": ["Chrome Extension", "JavaScript", "DOM"],
+    "cover": "assets/images/blog/chrome.png",
+    "content": "content/blog/002-chrome-extension.md"
+  },
+  {
+    "id": "003-lora-finetune",
+    "title": "大模型 LoRA 微调初体验",
+    "summary": "实训心得：数据处理、LoRA 训练配置、推理部署全流程记录，附关键代码与踩坑总结",
+    "date": "2025-04-10",
+    "category": "AI",
+    "tags": ["LoRA", "大模型", "Hugging Face", "Python"],
+    "cover": "assets/images/blog/lora.png",
+    "content": "content/blog/003-lora-finetune.md"
+  }
+]
