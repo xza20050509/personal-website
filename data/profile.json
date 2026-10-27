@@ -1,0 +1,12 @@
+{
+  "name": "肖子安",
+  "university": "大连民族大学",
+  "major": "物联网工程",
+  "grade": "2024级",
+  "tagline": "热爱物联网与 AI 的全栈探索者",
+  "avatar": "assets/images/avatar.png",
+  "social": [
+    { "type": "github", "label": "GitHub", "url": "https://github.com/xza20050509" },
+    { "type": "email", "label": "Email", "url": "mailto:xza20050509@qq.com" }
+  ]
+}
