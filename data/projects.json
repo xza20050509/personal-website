@@ -1,0 +1,32 @@
+[
+  {
+    "id": "git-practice",
+    "title": "Git 版本控制练习",
+    "summary": "Git 常用命令与协作流程练习，从 init 到 GitHub Pages 部署的完整实操",
+    "cover": "assets/images/projects/git.png",
+    "tags": ["Git", "GitHub", "版本控制"],
+    "date": "2024-09",
+    "link": "https://github.com/xza20050509",
+    "detail": "content/projects/git-practice.md"
+  },
+  {
+    "id": "chrome-ecommerce-extension",
+    "title": "Chrome 电商图片提取插件",
+    "summary": "浏览器插件，一键提取电商页面商品主图与详情图，支持批量下载",
+    "cover": "assets/images/projects/chrome-ext.png",
+    "tags": ["JavaScript", "Chrome Extension API", "DOM 解析"],
+    "date": "2024-11",
+    "link": "https://github.com/xza20050509",
+    "detail": "content/projects/chrome-extension.md"
+  },
+  {
+    "id": "lora-finetune",
+    "title": "大模型 LoRA 微调训练",
+    "summary": "基于 Hugging Face 的 LoRA 高效微调实践，涵盖数据处理、训练与推理部署",
+    "cover": "assets/images/projects/lora.png",
+    "tags": ["Python", "Hugging Face", "LoRA", "大模型"],
+    "date": "2025-03",
+    "link": "https://github.com/xza20050509",
+    "detail": "content/projects/lora-finetune.md"
+  }
+]
