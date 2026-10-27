@@ -1,0 +1,27 @@
+/* ============================================
+   星空背景
+   ============================================ */
+
+.starfield-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--bg-deep);
+}
+
+/* 内容卡片半透明背景，确保星空上的可读性 */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+/* 移动端降低星空性能开销 */
+@media (max-width: 768px) {
+  .starfield-canvas {
+    /* 移动端仍保留，但 JS 侧会减少星点数量 */
+  }
+}
