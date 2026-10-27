@@ -1,0 +1,194 @@
+/* ============================================
+   博客页专属样式 - 列表与详情
+   ============================================ */
+
+/* ---------- 博客列表 ---------- */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.blog-item {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.blog-item:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+  transform: translateX(4px);
+}
+
+.blog-item__cover {
+  flex: 0 0 120px;
+  width: 120px;
+  height: 90px;
+  background: var(--accent-gradient);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-deep);
+  font-size: 1.5rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.blog-item__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-item__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+  transition: color var(--transition-fast);
+}
+
+.blog-item:hover .blog-item__title {
+  color: var(--accent-primary);
+}
+
+.blog-item__summary {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-item__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.blog-item__category {
+  color: var(--accent-secondary);
+}
+
+.blog-item__tags {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+/* ---------- 博客详情 ---------- */
+.post-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-detail__header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border);
+}
+
+.post-detail__title {
+  margin-bottom: var(--space-md);
+}
+
+.post-detail__meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-md);
+}
+
+.post-detail__tags {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.post-detail__content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  backdrop-filter: blur(8px);
+}
+
+/* ---------- 上一篇/下一篇导航 ---------- */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.post-nav__item {
+  flex: 1;
+  min-width: 200px;
+  padding: var(--space-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.post-nav__item:hover {
+  border-color: var(--border-accent);
+}
+
+.post-nav__item--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.post-nav__label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.post-nav__title {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 768px) {
+  .blog-item {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .blog-item__cover {
+    flex: none;
+    width: 100%;
+    height: 140px;
+  }
+
+  .post-detail__content {
+    padding: var(--space-md);
+  }
+}
