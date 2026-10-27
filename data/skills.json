@@ -1,0 +1,42 @@
+[
+  {
+    "category": "编程语言",
+    "skills": [
+      { "name": "C 语言", "level": 4 },
+      { "name": "Java", "level": 3 },
+      { "name": "Python", "level": 4 }
+    ]
+  },
+  {
+    "category": "硬件 / 嵌入式",
+    "skills": [
+      { "name": "单片机", "level": 3 }
+    ]
+  },
+  {
+    "category": "后端框架",
+    "skills": [
+      { "name": "Spring Boot", "level": 3 }
+    ]
+  },
+  {
+    "category": "AI / 大模型",
+    "skills": [
+      { "name": "AI 大模型应用", "level": 4 },
+      { "name": "LoRA 微调训练", "level": 3 }
+    ]
+  },
+  {
+    "category": "版本控制",
+    "skills": [
+      { "name": "Git", "level": 4 }
+    ]
+  },
+  {
+    "category": "前端",
+    "skills": [
+      { "name": "浏览器插件开发", "level": 3 },
+      { "name": "HTML / CSS / JavaScript", "level": 3 }
+    ]
+  }
+]
