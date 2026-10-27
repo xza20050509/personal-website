@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="肖子安 - 大连民族大学物联网工程专业学生，热爱物联网与 AI 的全栈探索者">
+  <title>肖子安的个人网站</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/starfield.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+
+  <!-- highlight.js 主题（深色） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/github-dark.min.css">
+</head>
+<body>
+  <!-- 星空背景 -->
+  <canvas class="starfield-canvas"></canvas>
+
+  <!-- 导航栏 -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">肖子安</a>
+      <button class="menu-toggle" aria-label="菜单" aria-expanded="false">☰</button>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="active">首页</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#blog">博客</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero 个人介绍 -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__avatar" id="hero-avatar">肖</div>
+          <div class="hero__content" id="hero-content">
+            <p class="loading">加载中...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills">
+      <div class="container">
+        <div class="section__title">
+          <h2>技能栈</h2>
+        </div>
+        <div class="skills-grid" id="skills-container">
+          <p class="loading">加载中...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects">
+      <div class="container">
+        <div class="section__title">
+          <h2>项目作品</h2>
+        </div>
+        <div class="grid grid--3" id="projects-preview">
+          <p class="loading">加载中...</p>
+        </div>
+        <div class="projects-cta">
+          <a href="projects.html" class="btn btn--outline">查看全部项目 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 博客 -->
+    <section id="blog">
+      <div class="container">
+        <div class="section__title">
+          <h2>学习笔记</h2>
+        </div>
+        <div class="blog-list" id="blog-preview">
+          <p class="loading">加载中...</p>
+        </div>
+        <div class="blog-cta">
+          <a href="blog.html" class="btn btn--outline">查看全部文章 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact">
+      <div class="container">
+        <div class="section__title">
+          <h2>联系我</h2>
+        </div>
+        <div class="contact-section">
+          <p class="contact-section__intro">
+            如果你对我的项目或技术方向感兴趣，欢迎通过以下方式联系我。
+          </p>
+          <div class="social-links contact-social">
+            <a href="https://github.com/xza20050509" class="social-link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:xza20050509@qq.com" class="social-link">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <p>© <span class="current-year">2026</span> 肖子安 · 用 ❤️ 构建</p>
+        <p>基于纯 HTML + CSS + JavaScript · 部署于 GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS 库（CDN） -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11/lib/core.min.js"></script>
+
+  <!-- JS 核心模块 -->
+  <script src="js/starfield.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- 页面 JS -->
+  <script src="js/pages/home.js"></script>
+</body>
+</html>
